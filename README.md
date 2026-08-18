@@ -1,6 +1,7 @@
 # 🎮 Portafolio de Game Development
 
-<img width="2816" height="1536" alt="logo_FAMM7u7" src="https://github.com/user-attachments/assets/c1a626d6-32bb-42fc-bfa0-0bdfa4b8ed1c" />
+<img width="1983" height="793" alt="banner_FAMM (2)" src="https://github.com/user-attachments/assets/bd0416ee-2fc0-4947-8323-644d096969a6" />
+
 
 ## 👩‍💻 Sobre Mí
 ¡Hola! Soy **Francia Andrea Marin Moron**, estudiante de Ingeniería de Sistemas en la UNIVALLE Sede La Paz. 
