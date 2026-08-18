@@ -13,7 +13,7 @@ Juego de habilidad / Juego de trayectoria
 * **SOLTAR CLICK / TAP** - Lanzar el residuo
 * **CLICK en "¡JUGAR AHORA!"** - Iniciar partida
 * **CLICK en "REINTENTAR"** - Reiniciar juego
-* 
+  
 ## 📸 Capturas de pantalla
 
 <div align="center">
