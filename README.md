@@ -72,3 +72,16 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
 
 ---
+### 4. Gotitas Magicas
+
+<p align="center">
+  <img width="742" height="362" alt="video3" src="https://github.com/user-attachments/assets/8506b871-9207-4e5a-9689-5aa35dde4be0" />
+</p>
+
+* **Descripción breve:** Verdu-Chan es un survival arcade donde controlas una zanahoria kawaii que debe sobrevivir a oleadas de comida chatarra, con ataque automático, recolección de verduras que curan y dan experiencia, y un sistema de mejoras al subir de nivel.
+* **Género:** Survival / Arcade (Roguelite)
+* **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
+* **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/verdu-chan) — Incluye 3 versiones.
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+
+---
