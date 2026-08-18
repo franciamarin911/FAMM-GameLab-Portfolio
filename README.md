@@ -31,14 +31,18 @@ En mi tiempo libre disfruto de jugar voleibol y manejar moto. Además, estoy per
 
 ## 🕹️ Galería de Videojuegos
 
-Aquí presento los prototipos y videojuegos funcionales desarrollados hasta el sábado 22 de agosto.
+Aquí presento los prototipos y videojuegos funcionales desarrollados.
 
-### 1. [Nombre de tu Juego 1]
-![GIF o Imagen del Juego 1](enlace-a-imagen.gif)
-* **Descripción breve:** [Una línea sobre qué trata el juego]
-* **Género:** Platformer / Shooter / Puzzle
-* **Motor/Tecnología:** [Ej. Unity, Godot, C#]
-* **Repositorio:** [📁 Ver código fuente](./juego-1-platformer/)
+### 1. [Math Crush]
+
+<p align="center">
+  <img width="736" height="364" alt="videoooo" src="https://github.com/user-attachments/assets/2d94bfd4-94e1-4a55-a034-b1ff8de46fe4" />
+</p>
+
+* **Descripción breve:** Math Crush es un juego matemático rápido y colorido con estética RGB gamer, donde debes encontrar el número objetivo seleccionando dos números vecinos en un tablero de 5x5 y eligiendo la operación correcta (+, −, × o ÷) para que el resultado coincida con el número mostrado, ganando 100 puntos por cada acierto, mientras administras 3 vidas y un tiempo límite de 60 segundos para obtener la mayor puntuación posible.
+* **Género:** Puzzle / Matemático (Educativo)
+* **Motor/Tecnología:** HTML5 / CSS3 / JavaScript
+* **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game)
 * **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
 
 ---
