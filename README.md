@@ -75,7 +75,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 ### 4. Gotitas Magicas
 
 <p align="center">
-  <img width="742" height="362" alt="video3" src="https://github.com/user-attachments/assets/8506b871-9207-4e5a-9689-5aa35dde4be0" />
+  <img width="1884" height="992" alt="video4" src="https://github.com/user-attachments/assets/b885be73-b3ba-4864-a0bf-8a09990b13af" />
 </p>
 
 * **Descripción breve:** Verdu-Chan es un survival arcade donde controlas una zanahoria kawaii que debe sobrevivir a oleadas de comida chatarra, con ataque automático, recolección de verduras que curan y dan experiencia, y un sistema de mejoras al subir de nivel.
