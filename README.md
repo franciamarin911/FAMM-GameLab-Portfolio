@@ -1,9 +1,6 @@
-# FAMM-GameLab-Portfolio
-Personal Game Development portfolio featuring videogames, prototypes, development processes, technical documentation, and lessons learned.
-
 # 🎮 Portafolio de Game Development
 
-![Banner del Portafolio](enlace-a-tu-banner-o-gif-aqui.gif)
+<img width="2816" height="1536" alt="logo_FAMM7u7" src="https://github.com/user-attachments/assets/c1a626d6-32bb-42fc-bfa0-0bdfa4b8ed1c" />
 
 ## 👩‍💻 Sobre Mí
 ¡Hola! Soy **Francia Andrea Marin Moron**, estudiante de Ingeniería de Sistemas en la UNIVALLE Sede La Paz. 
