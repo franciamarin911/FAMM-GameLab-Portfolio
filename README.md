@@ -42,7 +42,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Descripción breve:** Math Crush es un juego matemático rápido y colorido con estética RGB gamer, donde debes encontrar el número objetivo seleccionando dos números vecinos en un tablero de 5x5 y eligiendo la operación correcta (+, −, × o ÷) para que el resultado coincida con el número mostrado, ganando 100 puntos por cada acierto, mientras administras 3 vidas y un tiempo límite de 60 segundos para obtener la mayor puntuación posible.
 * **Género:** Puzzle / Matemático (Educativo)
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript
-* **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game)
+* **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game) — Incluye 3 versiones.
 * **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
 
 ---
