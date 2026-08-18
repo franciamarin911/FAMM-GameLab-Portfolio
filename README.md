@@ -33,7 +33,7 @@ En mi tiempo libre disfruto de jugar voleibol y manejar moto. Además, estoy per
 
 Aquí presento los prototipos y videojuegos funcionales desarrollados.
 
-### 1. [Math Crush]
+### 1. Math Crush
 
 <p align="center">
   <img width="736" height="364" alt="videoooo" src="https://github.com/user-attachments/assets/2d94bfd4-94e1-4a55-a034-b1ff8de46fe4" />
@@ -43,6 +43,19 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Puzzle / Matemático (Educativo)
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript
 * **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game) — Incluye 3 versiones.
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+
+---
+### 2. Trashketball
+
+<p align="center">
+  <img width="730" height="368" alt="videooo2" src="https://github.com/user-attachments/assets/a769d854-f65c-4a32-b153-c41db0fabbc5" />
+</p>
+
+* **Descripción breve:** Trashketball Extreme Pro es un simulador arcade de reciclaje donde el jugador debe encestar residuos en contenedores móviles, aplicando física avanzada con viento dinámico, obstáculos rebotadores y un sistema de combos que multiplica la puntuación, todo ello en un entorno urbano vivo con escenarios cambiantes y un límite de tiempo de 60 segundos.
+* **Género:** Juego de habilidad o trayectoria
+* **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
+* **Repositorio:** [📁 Ver código fuente](http://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Trashketball) — Incluye 3 versiones.
 * **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
 
 ---
