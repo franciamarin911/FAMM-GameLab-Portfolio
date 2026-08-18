@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Crush</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            user-select: none;
+        }
+
+        body {
+            background: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        #contenedor-juego {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .pantalla {
+            display: none;
+        }
+
+        .pantalla.activa {
+            display: block;
+        }
+
+        .btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* Interfaz */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #contenedor-objetivo {
+            background: #ffeaa7;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        #num-objetivo {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        /* Cuadricula */
+        #tablero {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 6px;
+            background: #f1f2f6;
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .celda {
+            aspect-ratio: 1;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Colores basicos de celdas */
+        .c-1 { background: #ff7675; }
+        .c-2 { background: #74b9ff; }
+        .c-3 { background: #55efc4; }
+        .c-4 { background: #fdcb6e; color: #333; }
+        .c-5 { background: #a29bfe; }
+        .c-6 { background: #fd79a8; }
+        .c-7 { background: #fab1a0; }
+        .c-8 { background: #00cec9; }
+        .c-9 { background: #ffeaa7; color: #333; }
+        
+        /* Celdas sin color por un bug de generacion */
+        .c-0 { background: #dfe6e9; color: transparent; }
+
+        .celda.seleccionada {
+            border: 3px solid #2d3436;
+            transform: scale(0.9);
+        }
+
+        /* Operadores */
+        #operadores {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .btn-op {
+            flex: 1;
+            background: #f1f2f6;
+            border: 2px solid #ced6e0;
+            border-radius: 10px;
+            padding: 10px 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #57606f;
+        }
+
+        .btn-op.seleccionado {
+            background: #4ecdc4;
+            color: white;
+            border-color: #4ecdc4;
+        }
+    </style>
+</head>
+<body>
+
+<div id="contenedor-juego">
+    <!-- Inicio -->
+    <div id="pantalla-inicio" class="pantalla activa">
+        <h1>Math Crush</h1>
+        <p>Encuentra el objetivo combinando números.</p>
+        <button class="btn" onclick="iniciarJuego()">JUGAR</button>
+    </div>
+
+    <!-- Juego -->
+    <div id="pantalla-juego" class="pantalla">
+        <div class="hud">
+            <div>Puntos: <span id="puntaje">0</span></div>
+            <div>Tiempo: <span id="tiempo">60</span>s</div>
+        </div>
+
+        <div id="contenedor-objetivo">
+            <p style="margin:0; font-size:0.9rem;">Objetivo:</p>
+            <div id="num-objetivo">12</div>
+        </div>
+
+        <div id="tablero"></div>
+
+        <div id="operadores">
+            <button class="btn-op" onclick="seleccionarOp('+')">+</button>
+            <button class="btn-op" onclick="seleccionarOp('-')">-</button>
+            <button class="btn-op" onclick="seleccionarOp('*')">×</button>
+            <button class="btn-op" onclick="seleccionarOp('/')">÷</button>
+        </div>
+    </div>
+
+    <!-- Fin -->
+    <div id="pantalla-fin" class="pantalla">
+        <h1>¡Tiempo Terminado!</h1>
+        <p>Puntuación Final: <span id="puntaje-final" style="font-weight:bold; font-size:1.5rem;">0</span></p>
+        <button class="btn" onclick="reiniciarJuego()">Volver a intentar</button>
+    </div>
+</div>
+
+<script>
+    const filas = 5;
+    const columnas = 5;
+    let cuadricula = [];
+    let puntaje = 0;
+    let tiempoRestante = 60;
+    let intervaloTiempo;
+    let objetivo = 0;
+    
+    let seleccion1 = null;
+    let operadorActual = null;
+
+    function iniciarJuego() {
+        cambiarPantalla('pantalla-juego');
+        puntaje = 0;
+        tiempoRestante = 60;
+        document.getElementById('puntaje').innerText = puntaje;
+        
+        iniciarTablero();
+        generarObjetivo();
+        
+        clearInterval(intervaloTiempo);
+        intervaloTiempo = setInterval(actualizarTiempo, 1000);
+    }
+
+    function cambiarPantalla(id) {
+        document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+        document.getElementById(id).classList.add('activa');
+    }
+
+    function actualizarTiempo() {
+        tiempoRestante--;
+        document.getElementById('tiempo').innerText = tiempoRestante;
+        
+        // BUG: El tiempo puede mostrar numeros negativos antes de terminar
+        if (tiempoRestante < 0) {
+            terminarJuego();
+        }
+    }
+
+    // Inicia matriz de juego
+    function iniciarTablero() {
+        cuadricula = [];
+        const elementoTablero = document.getElementById('tablero');
+        elementoTablero.innerHTML = '';
+
+        for (let f = 0; f < filas; f++) {
+            cuadricula[f] = [];
+            for (let c = 0; c < columnas; c++) {
+                const valor = Math.floor(Math.random() * 9) + 1;
+                cuadricula[f][c] = valor;
+                crearCeldaDOM(f, c, valor, elementoTablero);
+            }
+        }
+    }
+
+    function crearCeldaDOM(f, c, valor, contenedor) {
+        const celda = document.createElement('div');
+        celda.className = `celda c-${valor}`;
+        celda.innerText = valor;
+        celda.dataset.f = f;
+        celda.dataset.c = c;
+        celda.addEventListener('click', () => clickCelda(f, c, celda));
+        contenedor.appendChild(celda);
+    }
+
+    // Genera un objetivo aleatorio basado en celdas adyacentes
+    function generarObjetivo() {
+        const f1 = Math.floor(Math.random() * filas);
+        const c1 = Math.floor(Math.random() * columnas);
+        
+        const direcciones = [[-1,0], [1,0], [0,-1], [0,1]];
+        let f2 = f1 + 1;
+        let c2 = c1;
+        
+        // Proteccion basica de limites
+        if (f2 >= filas) f2 = f1 - 1;
+
+        const v1 = cuadricula[f1][c1];
+        const v2 = cuadricula[f2][c2];
+        const ops = ['+', '-', '*', '/'];
+        const op = ops[Math.floor(Math.random() * ops.length)];
+
+        let res = 0;
+        if (op === '+') res = v1 + v2;
+        if (op === '-') res = v1 - v2;
+        if (op === '*') res = v1 * v2;
+        // BUG: No valida si la division es exacta, puede pedir decimales imposibles
+        if (op === '/') res = v1 / v2;
+
+        objetivo = res;
+        document.getElementById('num-objetivo').innerText = objetivo;
+    }
+
+    // Maneja la interaccion de celdas
+    function clickCelda(f, c, elemento) {
+        if (!seleccion1) {
+            seleccion1 = { f, c, val: cuadricula[f][c], el: elemento };
+            elemento.classList.add('seleccionada');
+        } 
+        else if (seleccion1 && !operadorActual) {
+            // BUG VISUAL: Cambia la seleccion en codigo pero olvida quitar la clase CSS a la celda anterior
+            seleccion1 = { f, c, val: cuadricula[f][c], el: elemento };
+            elemento.classList.add('seleccionada');
+        } 
+        else if (seleccion1 && operadorActual) {
+            const v1 = seleccion1.val;
+            const v2 = cuadricula[f][c];
+            let resultado = 0;
+
+            if (operadorActual === '+') resultado = v1 + v2;
+            if (operadorActual === '-') resultado = v1 - v2;
+            if (operadorActual === '*') resultado = v1 * v2;
+            if (operadorActual === '/') resultado = v1 / v2;
+
+            if (resultado === objetivo) {
+                puntaje += 100;
+                document.getElementById('puntaje').innerText = puntaje;
+                caidaBloques(seleccion1.f, seleccion1.c, f, c);
+                generarObjetivo();
+            }
+            
+            // BUG VISUAL: No limpia los operadores seleccionados en la interfaz al fallar
+            seleccion1.el.classList.remove('seleccionada');
+            elemento.classList.remove('seleccionada');
+            seleccion1 = null;
+            operadorActual = null;
+        }
+    }
+
+    function seleccionarOp(op) {
+        operadorActual = op;
+        document.querySelectorAll('.btn-op').forEach(b => b.classList.remove('seleccionado'));
+        // BUG LOGICO: Intenta añadir clase usando event.target que no fue pasado a la funcion
+        // Esto lanzara un error silencioso en consola y no coloreara el operador
+        try { event.target.classList.add('seleccionado'); } catch(e) {}
+    }
+
+    // Sistema de caida de bloques (Cascada)
+    function caidaBloques(f1, c1, f2, c2) {
+        cuadricula[f1][c1] = 0;
+        cuadricula[f2][c2] = 0;
+
+        for (let c = 0; c < columnas; c++) {
+            let espacios = 0;
+            for (let f = filas - 1; f >= 0; f--) {
+                if (cuadricula[f][c] === 0) {
+                    espacios++;
+                } else if (espacios > 0) {
+                    cuadricula[f + espacios][c] = cuadricula[f][c];
+                    cuadricula[f][c] = 0;
+                }
+            }
+            
+            // Llena los nuevos espacios arriba
+            for (let f = 0; f < espacios; f++) {
+                // BUG LOGICO: Genera numeros de 0 a 8 en vez de 1 a 9. El 0 crea una celda "invisible"
+                cuadricula[f][c] = Math.floor(Math.random() * 9); 
+            }
+        }
+        actualizarDOMTablero();
+    }
+
+    function actualizarDOMTablero() {
+        const elementoTablero = document.getElementById('tablero');
+        elementoTablero.innerHTML = '';
+        for (let f = 0; f < filas; f++) {
+            for (let c = 0; c < columnas; c++) {
+                crearCeldaDOM(f, c, cuadricula[f][c], elementoTablero);
+            }
+        }
+    }
+
+    function terminarJuego() {
+        clearInterval(intervaloTiempo);
+        document.getElementById('puntaje-final').innerText = puntaje;
+        cambiarPantalla('pantalla-fin');
+    }
+
+    function reiniciarJuego() {
+        cambiarPantalla('pantalla-inicio');
+    }
+</script>
+</body>
+</html>

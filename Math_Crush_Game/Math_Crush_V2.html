@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Crush: ¡Aventura de Números!</title>
+    <style>
+        :root {
+            --bg-color: #f0f4f8;
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #ffe66d;
+            --text-color: #2f3e46;
+            --board-bg: #f7f9fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
+        }
+
+        body {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-color);
+        }
+
+        #game-container {
+            background: white;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid #fff;
+        }
+
+        /* Pantallas */
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            color: #ff4a75;
+            font-size: 2.2rem;
+            margin-top: 10px;
+            text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0,0,0,0.05);
+        }
+
+        p.subtitle {
+            color: #6c7a89;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        /* Reglas */
+        .rules-box {
+            background: #fdf6e2;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 25px;
+            border: 2px dashed #f5b041;
+        }
+
+        .rules-box h3 {
+            margin-top: 0;
+            color: #d35400;
+            font-size: 1.2rem;
+        }
+
+        .rules-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .rules-box li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%);
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(255, 71, 87, 0.5);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Interfaz de Juego */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .hud div span {
+            color: #ff4a75;
+            font-size: 1.1rem;
+        }
+
+        #target-container {
+            background: linear-gradient(135deg, #ffe66d 0%, #ffcc00 100%);
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 -4px 0 rgba(0,0,0,0.1);
+        }
+
+        #target-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            color: #795548;
+            font-weight: bold;
+        }
+
+        #target-num {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin: 5px 0 0 0;
+            color: #2c3e50;
+            text-shadow: 2px 2px 0 rgba(255,255,255,0.6);
+        }
+
+        /* Cuadrícula estilo Tetris/Candy Crush */
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 8px;
+            background: #eef2f7;
+            padding: 10px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .cell {
+            aspect-ratio: 1;
+            background: #fff;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* Colores de bloques pasteles y vivos */
+        .color-1 { background: #ff7675; }
+        .color-2 { background: #74b9ff; }
+        .color-3 { background: #55efc4; }
+        .color-4 { background: #ffeaa7; color: #2d3436; text-shadow: none; }
+        .color-5 { background: #a29bfe; }
+        .color-6 { background: #fd79a8; }
+        .color-7 { background: #fab1a0; }
+        .color-8 { background: #00cec9; }
+        .color-9 { background: #fdcb6e; color: #2d3436; text-shadow: none; }
+
+        .cell:hover {
+            transform: scale(1.05);
+        }
+
+        .cell.selected {
+            transform: scale(0.95);
+            border: 3px solid #2d3436;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        /* Operadores */
+        #operators {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .op-btn {
+            flex: 1;
+            background: #f1f2f6;
+            border: 2px solid #ced6e0;
+            border-radius: 12px;
+            padding: 12px 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #57606f;
+        }
+
+        .op-btn.selected {
+            background: #4ecdc4;
+            color: white;
+            border-color: #4ecdc4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(78, 205, 196, 0.4);
+        }
+
+        /* Feedback y Efectos */
+        .shake {
+            animation: shake 0.3s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+
+        .pop-effect {
+            animation: popOut 0.3s ease forwards;
+        }
+
+        @keyframes popOut {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+
+        #combo-msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 230, 109, 0.95);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #ff4a75;
+            font-size: 1.3rem;
+            pointer-events: none;
+            display: none;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 2px solid #ff4a75;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <div id="combo-msg">¡GENIAL! +100</div>
+
+    <!-- PANTALLA DE INICIO / REGLAS -->
+    <div id="start-screen" class="screen active">
+        <h1>Math Crush</h1>
+        <p class="subtitle">¡Rompecabezas Numérico en Cascada!</p>
+        
+        <div class="rules-box">
+            <h3>📜 Reglas del Juego:</h3>
+            <ul>
+                <li>El juego te pedirá conseguir un <strong>Número Objetivo</strong> brillante arriba.</li>
+                <li>Selecciona un número del tablero, luego un operador (<strong>+, -, ×, ÷</strong>), y finalmente un <strong>número vecino</strong> (arriba, abajo, izquierda o derecha).</li>
+                <li>Si el resultado de la operación da el Número Objetivo, ¡los bloques explotarán!</li>
+                <li>Al igual que en <strong>Tetris</strong> y <strong>Candy Crush</strong>, los bloques de arriba caerán y aparecerán nuevos números.</li>
+                <li>Cada acierto suma puntos. ¡Pierdes una vida si te equivocas! Resuelve rápido antes de que se acabe el tiempo.</li>
+            </ul>
+        </div>
+        
+        <button class="btn" onclick="startGame()">¡JUGAR AHORA!</button>
+    </div>
+
+    <!-- PANTALLA DE JUEGO -->
+    <div id="game-screen" class="screen">
+        <div class="hud">
+            <div>Puntos: <span id="score">0</span></div>
+            <div>Vidas: <span id="lives">💖💖💖</span></div>
+            <div>Tiempo: <span id="timer">60s</span></div>
+        </div>
+
+        <div id="target-container">
+            <p id="target-label">🎯 Encuentra el resultado:</p>
+            <div id="target-num">12</div>
+        </div>
+
+        <div id="grid"></div>
+
+        <div id="operators">
+            <button class="op-btn" onclick="selectOperator('+')">+</button>
+            <button class="op-btn" onclick="selectOperator('-')">-</button>
+            <button class="op-btn" onclick="selectOperator('*')">×</button>
+            <button class="op-btn" onclick="selectOperator('/')">÷</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA DE FIN DE JUEGO -->
+    <div id="gameover-screen" class="screen">
+        <h1>¡Fin del Juego!</h1>
+        <p class="subtitle">Hiciste un gran esfuerzo matemático.</p>
+        <div style="font-size: 1.5rem; margin-bottom: 30px; font-weight: bold;">
+            Puntuación Final: <span id="final-score" style="color: #ff4a75;">0</span>
+        </div>
+        <button class="btn" onclick="restartGame()">Volver a Intentarlo</button>
+    </div>
+</div>
+
+<script>
+    const rows = 5;
+    const cols = 5;
+    let gridData = [];
+    let score = 0;
+    let lives = 3;
+    let timeLeft = 60;
+    let timerInterval;
+    let targetNumber = 0;
+    
+    let firstSelected = null;
+    let selectedOperator = null;
+
+    function startGame() {
+        switchScreen('game-screen');
+        score = 0;
+        lives = 3;
+        timeLeft = 60;
+        document.getElementById('score').innerText = score;
+        updateLivesUI();
+        
+        initGrid();
+        generateNewTarget();
+        
+        clearInterval(timerInterval);
+        timerInterval = setInterval(updateTimer, 1000);
+    }
+
+    function switchScreen(screenId) {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById(screenId).classList.add('active');
+    }
+
+    function updateLivesUI() {
+        document.getElementById('lives').innerText = '💖'.repeat(lives) + '💔'.repeat(3 - lives);
+    }
+
+    function updateTimer() {
+        timeLeft--;
+        document.getElementById('timer').innerText = timeLeft + 's';
+        if (timeLeft <= 0) {
+            endGame();
+        }
+    }
+
+    function initGrid() {
+        gridData = [];
+        const gridElement = document.getElementById('grid');
+        gridElement.innerHTML = '';
+
+        for (let r = 0; r < rows; r++) {
+            gridData[r] = [];
+            for (let c = 0; c < cols; c++) {
+                const val = Math.floor(Math.random() * 9) + 1;
+                gridData[r][c] = val;
+
+                const cell = document.createElement('div');
+                cell.className = `cell color-${val}`;
+                cell.innerText = val;
+                cell.dataset.row = r;
+                cell.dataset.col = c;
+                cell.addEventListener('click', () => handleCellClick(r, c, cell));
+                gridElement.appendChild(cell);
+            }
+        }
+    }
+
+    function generateNewTarget() {
+        const r1 = Math.floor(Math.random() * rows);
+        const c1 = Math.floor(Math.random() * cols);
+        
+        const directions = [[-1,0], [1,0], [0,-1], [0,1]];
+        let validNeighbor = null;
+        let r2, c2;
+
+        while(!validNeighbor) {
+            const dir = directions[Math.floor(Math.random() * directions.length)];
+            r2 = r1 + dir[0];
+            c2 = c1 + dir[1];
+            if (r2 >= 0 && r2 < rows && c2 >= 0 && c2 < cols) {
+                validNeighbor = true;
+            }
+        }
+
+        const v1 = gridData[r1][c1];
+        const v2 = gridData[r2][c2];
+        const ops = ['+', '-', '*', '/'];
+        const op = ops[Math.floor(Math.random() * ops.length)];
+
+        let res = 0;
+        if (op === '+') res = v1 + v2;
+        if (op === '-') res = v1 - v2;
+        if (op === '*') res = v1 * v2;
+        if (op === '/') {
+            if (v1 % v2 === 0) res = v1 / v2;
+            else res = v1 + v2;
+        }
+
+        targetNumber = res;
+        document.getElementById('target-num').innerText = targetNumber;
+    }
+
+    function handleCellClick(r, c, element) {
+        if (!firstSelected) {
+            firstSelected = { r, c, val: gridData[r][c], el: element };
+            element.classList.add('selected');
+        } else if (firstSelected && !selectedOperator) {
+            firstSelected.el.classList.remove('selected');
+            firstSelected = { r, c, val: gridData[r][c], el: element };
+            element.classList.add('selected');
+        } else if (firstSelected && selectedOperator) {
+            const isNeighbor = Math.abs(firstSelected.r - r) + Math.abs(firstSelected.c - c) === 1;
+
+            if (!isNeighbor) {
+                triggerShake();
+                resetSelection();
+                return;
+            }
+
+            const v1 = firstSelected.val;
+            const v2 = gridData[r][c];
+            let currentResult = 0;
+
+            if (selectedOperator === '+') currentResult = v1 + v2;
+            if (selectedOperator === '-') currentResult = v1 - v2;
+            if (selectedOperator === '*') currentResult = v1 * v2;
+            if (selectedOperator === '/') currentResult = v1 / v2;
+
+            if (currentResult === targetNumber) {
+                showComboMessage();
+                score += 100;
+                document.getElementById('score').innerText = score;
+                
+                firstSelected.el.classList.add('pop-effect');
+                element.classList.add('pop-effect');
+
+                setTimeout(() => {
+                    cascadeBlocks(firstSelected.r, firstSelected.c, r, c);
+                    resetSelection();
+                    generateNewTarget();
+                }, 300);
+
+            } else {
+                lives--;
+                updateLivesUI();
+                triggerShake();
+                resetSelection();
+                if (lives <= 0) {
+                    endGame();
+                }
+            }
+        }
+    }
+
+    function selectOperator(op) {
+        if (!firstSelected) return;
+        selectedOperator = op;
+        
+        document.querySelectorAll('.op-btn').forEach(b => {
+            if (b.innerText === (op === '*' ? '×' : op === '/' ? '÷' : op)) {
+                b.classList.add('selected');
+            } else {
+                b.classList.remove('selected');
+            }
+        });
+    }
+
+    function resetSelection() {
+        if (firstSelected) firstSelected.el.classList.remove('selected');
+        firstSelected = null;
+        selectedOperator = null;
+        document.querySelectorAll('.op-btn').forEach(b => b.classList.remove('selected'));
+    }
+
+    function triggerShake() {
+        const grid = document.getElementById('grid');
+        grid.classList.add('shake');
+        setTimeout(() => grid.classList.remove('shake'), 300);
+    }
+
+    function showComboMessage() {
+        const msg = document.getElementById('combo-msg');
+        msg.style.display = 'block';
+        setTimeout(() => msg.style.display = 'none', 600);
+    }
+
+    function cascadeBlocks(r1, c1, r2, c2) {
+        gridData[r1][c1] = 0;
+        gridData[r2][c2] = 0;
+
+        for (let c = 0; c < cols; c++) {
+            let emptySpaces = 0;
+            for (let r = rows - 1; r >= 0; r--) {
+                if (gridData[r][c] === 0) {
+                    emptySpaces++;
+                } else if (emptySpaces > 0) {
+                    gridData[r + emptySpaces][c] = gridData[r][c];
+                    gridData[r][c] = 0;
+                }
+            }
+            for (let r = 0; r < emptySpaces; r++) {
+                gridData[r][c] = Math.floor(Math.random() * 9) + 1;
+            }
+        }
+        renderGridUI();
+    }
+
+    function renderGridUI() {
+        const gridElement = document.getElementById('grid');
+        gridElement.innerHTML = '';
+        for (let r = 0; r < rows; r++) {
+            for (let c = 0; c < cols; c++) {
+                const val = gridData[r][c];
+                const cell = document.createElement('div');
+                cell.className = `cell color-${val}`;
+                cell.innerText = val;
+                cell.dataset.row = r;
+                cell.dataset.col = c;
+                cell.addEventListener('click', () => handleCellClick(r, c, cell));
+                gridElement.appendChild(cell);
+            }
+        }
+    }
+
+    function endGame() {
+        clearInterval(timerInterval);
+        document.getElementById('final-score').innerText = score;
+        switchScreen('gameover-screen');
+    }
+
+    function restartGame() {
+        switchScreen('start-screen');
+    }
+</script>
+</body>
+</html>
