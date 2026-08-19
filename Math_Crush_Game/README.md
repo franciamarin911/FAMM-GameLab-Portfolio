@@ -14,6 +14,12 @@ Puzzle / Matemático (Educativo)
 * **Click en "INICIAR PARTIDA"** - Comenzar juego
 * **Click en "VOLVER A JUGAR"** - Reiniciar partida
 
+## 🛠️ Desarrollo y Aprendizaje
+* **Tecnologías utilizadas:** HTML5, CSS3 y JavaScript nativo (Web development, sin uso de motores de videojuegos externos).
+* **Apoyo de IA:** Asistencia de Claude y Gemini para la estructuración del código, la lógica matemática y el diseño visual (UI/CSS), como parte de la asignatura de Introducción al desarrollo de videojuegos.
+* **¿Qué aprendí?:** Manejo de matrices bidimensionales para crear el tablero, lógica para detectar la selección de celdas vecinas y uso de temporizadores (`setInterval`) para el manejo del tiempo de juego en JavaScript.
+* **Mejoras futuras:** Agregar efectos de sonido al acertar operaciones, guardar la puntuación máxima (High Score) en el navegador y añadir más niveles de dificultad.
+
 ## 📸 Capturas de pantalla
 
 <div align="center">
