@@ -39,13 +39,13 @@ Arcade / Educativo (Habilidad)
         <br><b>❄️ Power-ups</b>
       </td>
       <td align="center">
-        <img width="380" alt="Contaminación" src="https://github.com/user-attachments/assets/5657c902-f8c6-43cc-bab4-796566480ae4" />
+        <img width="380" alt="Victoria" src="https://github.com/user-attachments/assets/2d676cff-5eb9-4ea3-b58b-740d6fddca4e" />
         <br><b>⚠️ Derrota</b>
       </td>
     </tr>
     <tr>
       <td align="center" colspan="2">
-        <img width="380" alt="Victoria" src="https://github.com/user-attachments/assets/2d676cff-5eb9-4ea3-b58b-740d6fddca4e" />
+        <img width="380" alt="Contaminación" src="https://github.com/user-attachments/assets/5657c902-f8c6-43cc-bab4-796566480ae4" />
         <br><b>🏆 Victoria</b>
       </td>
     </tr>
