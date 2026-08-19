@@ -56,7 +56,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Juego de habilidad o trayectoria
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
 * **Repositorio:** [📁 Ver código fuente](http://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Trashketball) — Incluye 3 versiones.
-* **Jugar ahora:** [🏀 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Trashketball/Trashketball%20v3.html)
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Trashketball/Trashketball%20v3.html)
 
 ---
 ### 3. Verdu-CHAN
@@ -69,7 +69,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Survival / Arcade (Roguelite)
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
 * **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/verdu-chan) — Incluye 3 versiones.
-* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/verdu-chan/verdu-chan%20v3.html)
 
 ---
 ### 4. Gotitas Magicas
