@@ -82,6 +82,6 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Arcade / Educativo (Habilidad)
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
 * **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Gotitas%20M%C3%A1gicas) — Incluye 3 versiones.
-* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Gotitas%20M%C3%A1gicas/gotitas-magicas%20v3.html)
 
 ---
