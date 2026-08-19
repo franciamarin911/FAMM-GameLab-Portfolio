@@ -13,6 +13,12 @@ Juego de habilidad / Juego de trayectoria
 * **SOLTAR CLICK / TAP** - Lanzar el residuo
 * **CLICK en "¡JUGAR AHORA!"** - Iniciar partida
 * **CLICK en "REINTENTAR"** - Reiniciar juego
+
+## 🛠️ Desarrollo y Aprendizaje
+* **Tecnologías utilizadas:** HTML5 (utilizando el elemento Canvas), CSS3 y JavaScript nativo[cite: 3].
+* **Apoyo de IA:** Asistencia de Claude y Gemini para la estructuración del código, el diseño del escenario y la lógica de las físicas, como parte de la asignatura de Introducción al desarrollo de videojuegos.
+* **¿Qué aprendí?:** Manejo del elemento Canvas para renderizar gráficos y animaciones en tiempo real[cite: 3]. Implementación de físicas matemáticas aplicadas, como la gravedad y la simulación de viento dinámico que altera la trayectoria en pleno vuelo[cite: 3]. Creación de una mecánica de lanzamiento estilo "resortera" calculando vectores y distancias mediante eventos táctiles y de ratón[cite: 3].
+* **Mejoras futuras:** Añadir efectos de sonido al interactuar con los obstáculos o encestar, implementar una tabla de clasificaciones globales (Leaderboard) y agregar distintos niveles de dificultad con más obstáculos móviles.
   
 ## 📸 Capturas de pantalla
 
