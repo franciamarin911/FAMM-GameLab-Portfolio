@@ -15,10 +15,13 @@ Juego de habilidad / Juego de trayectoria
 * **CLICK en "REINTENTAR"** - Reiniciar juego
 
 ## 🛠️ Desarrollo y Aprendizaje
-* **Tecnologías utilizadas:** HTML5 (utilizando el elemento Canvas), CSS3 y JavaScript nativo[cite: 3].
-* **Apoyo de IA:** Asistencia de Claude y Gemini para la estructuración del código, el diseño del escenario y la lógica de las físicas, como parte de la asignatura de Introducción al desarrollo de videojuegos.
-* **¿Qué aprendí?:** Manejo del elemento Canvas para renderizar gráficos y animaciones en tiempo real[cite: 3]. Implementación de físicas matemáticas aplicadas, como la gravedad y la simulación de viento dinámico que altera la trayectoria en pleno vuelo[cite: 3]. Creación de una mecánica de lanzamiento estilo "resortera" calculando vectores y distancias mediante eventos táctiles y de ratón[cite: 3].
-* **Mejoras futuras:** Añadir efectos de sonido al interactuar con los obstáculos o encestar, implementar una tabla de clasificaciones globales (Leaderboard) y agregar distintos niveles de dificultad con más obstáculos móviles.
+* **Tecnologías utilizadas:** HTML5, CSS3 y JavaScript nativo utilizando la API de Canvas.
+* **Apoyo de IA:** Utilicé la asistencia de Claude y Gemini para estructurar la física del juego, el cálculo de trayectorias y el diseño visual, como parte de la asignatura de Introducción al desarrollo de videojuegos.
+* **¿Qué aprendí?:** Durante este proyecto comprendí cómo se estructura un juego utilizando el marco MDA y exploré los distintos géneros de videojuegos (plataformas, puzle, simulación, aventura, arcade, rol, etc.), clasificando este título como un simulador arcade. En la práctica, esto se tradujo en:
+  * **Mecánicas:** Implementación de físicas de gravedad. Desarrollo de un sistema de arrastre y lanzamiento. Lógica para clasificar objetos en contenedores específicos (orgánico, reciclable y no reciclable). Detección de colisiones con obstáculos móviles.
+  * **Dinámicas:** Integración de un temporizador de 60 segundos. Sistema de 3 vidas para penalizar errores. Implementación de multiplicadores de puntaje mediante combos. Manejo de variables aleatorias, como el viento dinámico y contenedores en movimiento, que alteran la dificultad en cada tiro.
+  * **Estética:** Creación de una experiencia inmersiva mediante fondos urbanos animados, como nubes y autos. Uso de partículas y notificaciones en pantalla para reforzar la sensación competitiva y de simulador arcade.
+* **Mejoras futuras:** Integración de efectos de sonido (SFX) para los rebotes y aciertos, música de fondo urbana, y una tabla de puntuaciones máximas (Leaderboard) para fomentar la rejugabilidad.
   
 ## 📸 Capturas de pantalla
 
