@@ -15,10 +15,15 @@ Survival / Arcade (Roguelite)
 * **Ataque automático** - No requiere botón, se dispara solo al enemigo más cercano
 
 ## 🛠️ Desarrollo y Aprendizaje
-* **Tecnologías utilizadas:** HTML5, CSS3 y JavaScript nativo (Web development, sin uso de motores de videojuegos externos).
-* **Apoyo de IA:** Asistencia de Claude y Gemini para la estructuración del código, la lógica matemática y el diseño visual (UI/CSS), como parte de la asignatura de Introducción al desarrollo de videojuegos.
-* **¿Qué aprendí?:** Manejo de matrices bidimensionales para crear el tablero, lógica para detectar la selección de celdas vecinas y uso de temporizadores (`setInterval`) para el manejo del tiempo de juego en JavaScript.
-* **Mejoras futuras:** Agregar efectos de sonido al acertar operaciones, guardar la puntuación máxima (High Score) en el navegador y añadir más niveles de dificultad.
+* **Tecnologías utilizadas:** HTML5, CSS3 y JavaScript nativo *(puedes cambiar esto si usaste otro motor o lenguaje)*.
+* **Apoyo de IA:** Utilicé la asistencia de Claude, Gemini y ChatGPT para la estructuración de la lógica del juego, generación de ideas y la definición analítica del perfil del jugador ideal.
+* **¿Qué aprendí?:** En este proyecto profundicé en el diseño centrado en el usuario, aprendiendo a definir y aplicar el marco del **Player Persona**. Comprendí cómo analizar a mi público objetivo a través de los siguientes elementos:
+  * **Player Persona:** Aprendí a crear una representación semi-ficticia del jugador ideal. Es vital porque sirve como brújula para tomar decisiones de diseño, asegurando que el juego realmente conecte con su audiencia.
+  * **Objetivos del jugador (Goals):** Identifiqué lo que el jugador busca lograr dentro de la experiencia. Es importante para diseñar metas claras que mantengan el interés y brinden satisfacción.
+  * **Frustraciones (Pain points):** Analicé los obstáculos que pueden generar enojo o aburrimiento. Su importancia radica en poder pulir la curva de dificultad y la interfaz para evitar que el usuario abandone el juego.
+  * **Motivaciones:** Comprendí el "por qué" el usuario decide jugar (competencia, relajación, curiosidad). Esto es fundamental para construir mecánicas y sistemas de recompensas efectivos.
+  * **Comportamientos y hábitos:** Evalué el contexto del jugador (cuánto tiempo juega, en qué plataforma). Es esencial para adaptar la duración de las partidas y el diseño de los controles a su rutina real.
+* **Mejoras futuras:** Realizar pruebas de juego (playtesting) con personas reales que encajen en el perfil del Player Persona para validar si el diseño cumple con sus motivaciones y resuelve sus frustraciones.
 
 ## 📸 Capturas de pantalla
 
