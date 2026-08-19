@@ -56,7 +56,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Juego de habilidad o trayectoria
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript (Canvas 2D)
 * **Repositorio:** [📁 Ver código fuente](http://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Trashketball) — Incluye 3 versiones.
-* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Math_Crush_Game/Math_Crush_V3_RGB_Gamer_4K_fixed.html)
 
 ---
 ### 3. Verdu-CHAN
