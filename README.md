@@ -43,7 +43,7 @@ Aquí presento los prototipos y videojuegos funcionales desarrollados.
 * **Género:** Puzzle / Matemático (Educativo)
 * **Motor/Tecnología:** HTML5 / CSS3 / JavaScript
 * **Repositorio:** [📁 Ver código fuente](https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game) — Incluye 3 versiones.
-* **Jugar ahora:** [🎮 Enlace para jugarlo en la web (Itch.io o GitHub Pages)]
+* **Jugar ahora:** [🎮 Enlace para jugarlo en la web](https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Math_Crush_Game/Math_Crush_V3_RGB_Gamer_4K_fixed.html)
 
 ---
 ### 2. Trashketball
