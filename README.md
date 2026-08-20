@@ -30,7 +30,7 @@
 <table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px;" cellpadding="25">
   <tr>
     <td width="34%" align="center" valign="middle" style="border-right: 1px solid #2A2A35;">
-      <img src="https://github.com/user-attachments/assets/2fe45cd3-a5c8-4ffc-a8f4-483bdab854cc" alt="Insignia Personal" width="190" height="190" style="border: 3px solid #22D3EE; box-shadow: 0 0 20px #A855F7; object-fit: cover;">
+      <img src="https://i.imgur.com/Ari1iKp.gif" alt="Insignia Personal" width="190" height="190" style="border: 3px solid #22D3EE; box-shadow: 0 0 20px #A855F7; object-fit: cover;">
       <br><br>
       <img src="https://img.shields.io/badge/BUGSLAYER-A855F7?style=for-the-badge&labelColor=0A0A0F&logoColor=white" alt="Alter Ego"><br><br>
       <sub><i>Avatar</i></sub>
