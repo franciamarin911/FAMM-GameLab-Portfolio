@@ -37,7 +37,7 @@
     </td>
     <td width="66%" valign="top">
       <h2>🎴 Ficha de Personaje</h2>
-      <img src="https://img.shields.io/badge/Clase-Ingenier%C3%ADa%20de%20Sistemas-A855F7?style=for-the-badge&labelColor=0A0A0F">
+      <img src="https://img.shields.io/badge/Carrera-Ingenier%C3%ADa%20de%20Sistemas-A855F7?style=for-the-badge&labelColor=0A0A0F">
       <img src="https://img.shields.io/badge/Sede-Univalle%20La%20Paz-22D3EE?style=for-the-badge&labelColor=0A0A0F"><br><br>
       <p>¡Un cordial saludo! Soy <b>Francia Andrea Marin Moron</b>, estudiante de Ingeniería de Sistemas en la Univalle Sede La Paz. Me apasiona la tecnología y la programación, especialmente el desarrollo web, área en la que busco seguir creciendo profesionalmente.</p>
       <p>Actualmente incursiono en el desarrollo de videojuegos, enfocándome en mundos interactivos y mecánicas divertidas. También me interesan la <b>ciberseguridad</b>, el <b>IoT</b> y la <b>robótica</b>. Fuera del teclado disfruto del voleibol y manejar moto, y sigo perfeccionando mi inglés técnico para el sector tecnológico internacional.</p>
