@@ -161,7 +161,7 @@
   </tr>
 </table>
 
-<br><br><br>
+<br><br>
 
 <!-- JUEGO 2: TRASHKETBALL -->
 <div align="center">
@@ -191,7 +191,7 @@
   </tr>
 </table>
 
-<br><br><br>
+<br><br>
 
 <!-- JUEGO 3: VERDU-CHAN -->
 <div align="center">
@@ -221,7 +221,7 @@
   </tr>
 </table>
 
-<br><br><br>
+<br><br>
 
 <!-- JUEGO 4: GOTITAS MAGICAS -->
 <div align="center">
