@@ -31,7 +31,7 @@
   <tr>
     <td width="34%" align="center" valign="middle" style="border-right: 1px solid #2A2A35;">
       <!-- 🎯 PON AQUÍ TU GIF DE AVATAR: reemplaza la URL de abajo por el enlace directo a tu .gif (subido a GitHub, Imgur, etc.) -->
-      <img src="ENLACE_A_TU_GIF_AQUI.gif" alt="Insignia Personal" width="190" style="border-radius: 50%; border: 3px solid #22D3EE; box-shadow: 0 0 20px #A855F7;">
+      <img src="https://i.imgur.com/Ari1iKp.gif" alt="Insignia Personal" width="190" style="border-radius: 50%; border: 3px solid #22D3EE; box-shadow: 0 0 20px #A855F7;">
       <br><br>
       <img src="https://img.shields.io/badge/BUGSLAYER-A855F7?style=for-the-badge&labelColor=0A0A0F&logoColor=white" alt="Alter Ego"><br><br>
       <sub><i>Identidad Visual / Avatar</i></sub>
