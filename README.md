@@ -26,7 +26,6 @@
 
 <br><br>
 
-<!-- ===================== FICHA DE PERSONAJE ===================== -->
 <table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px;" cellpadding="25">
   <tr>
     <td width="34%" align="center" valign="middle" style="border-right: 1px solid #2A2A35;">
@@ -58,7 +57,6 @@
 
 <br>
 
-<!-- ===================== TECH STACK ===================== -->
 <div align="center">
   <h2>🛠️ Stack Tecnológico</h2>
 </div>
@@ -125,7 +123,6 @@
 
 <br>
 
-<!-- ===================== GALERIA DE VIDEOJUEGOS ===================== -->
 <div align="center">
   <h2>🕹️ Galería de Videojuegos</h2>
   <p><i>Colección de prototipos y mecánicas interactivas desarrolladas en HTML5, CSS3 y JS Canvas.</i></p>
@@ -133,7 +130,6 @@
 
 <br><br>
 
-<!-- JUEGO 1: MATH CRUSH -->
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=22D3EE&center=true&vCenter=true&width=500&lines=01+%2F%2F+MATH+CRUSH" alt="Math Crush Title">
 </div>
@@ -144,8 +140,9 @@
       <img width="100%" alt="Math Crush" src="https://github.com/user-attachments/assets/2d94bfd4-94e1-4a55-a034-b1ff8de46fe4" style="border-radius: 10px;" />
     </td>
     <td width="45%" valign="top">
-      <blockquote>Un juego matemático rápido y colorido con estética RGB gamer.</blockquote>
       <b>🎯 Objetivo:</b> Encontrar el número objetivo seleccionando dos números vecinos y la operación matemática correcta (+, −, × o ÷) antes de que acaben los 60 segundos.<br><br>
+      <b>📝 Descripción:</b>
+      <blockquote>Un juego matemático rápido y colorido con estética RGB gamer.</blockquote><br>
       <img src="https://img.shields.io/badge/G%C3%A9nero-Puzzle%20%2F%20Educativo-0A0A0F?style=flat-square&labelColor=22D3EE">
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20CSS3%20%2F%20JS-0A0A0F?style=flat-square&labelColor=2A2A35">
@@ -163,7 +160,6 @@
 
 <br><br>
 
-<!-- JUEGO 2: TRASHKETBALL -->
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=A855F7&center=true&vCenter=true&width=500&lines=02+%2F%2F+TRASHKETBALL" alt="Trashketball Title">
 </div>
@@ -174,8 +170,9 @@
       <img width="100%" alt="Trashketball" src="https://github.com/user-attachments/assets/a769d854-f65c-4a32-b153-c41db0fabbc5" style="border-radius: 10px;" />
     </td>
     <td width="45%" valign="top">
-      <blockquote>Simulador arcade de reciclaje con físicas dinámicas.</blockquote>
       <b>🎯 Objetivo:</b> Encestar residuos en contenedores móviles dominando la física avanzada, el viento dinámico y obstáculos rebotadores para generar combos.<br><br>
+      <b>📝 Descripción:</b>
+      <blockquote>Simulador arcade de reciclaje con físicas dinámicas.</blockquote><br>
       <img src="https://img.shields.io/badge/G%C3%A9nero-Arcade%20%2F%20Trayectoria-0A0A0F?style=flat-square&labelColor=A855F7">
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
@@ -193,7 +190,6 @@
 
 <br><br>
 
-<!-- JUEGO 3: VERDU-CHAN -->
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=22D3EE&center=true&vCenter=true&width=500&lines=03+%2F%2F+VERDU-CHAN" alt="Verdu-Chan Title">
 </div>
@@ -204,8 +200,9 @@
       <img width="100%" alt="Verdu-Chan" src="https://github.com/user-attachments/assets/8506b871-9207-4e5a-9689-5aa35dde4be0" style="border-radius: 10px;" />
     </td>
     <td width="45%" valign="top">
-      <blockquote>Sobrevive a las oleadas de comida chatarra.</blockquote>
       <b>🎯 Objetivo:</b> Controlar a una zanahoria que ataca automáticamente, recolectando verduras sanas para subir de nivel y obtener mejoras estilo roguelite.<br><br>
+      <b>📝 Descripción:</b>
+      <blockquote>Sobrevive a las oleadas de comida chatarra.</blockquote><br>
       <img src="https://img.shields.io/badge/G%C3%A9nero-Survival%20%2F%20Roguelite-0A0A0F?style=flat-square&labelColor=22D3EE">
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
@@ -223,7 +220,6 @@
 
 <br><br>
 
-<!-- JUEGO 4: GOTITAS MAGICAS -->
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=A855F7&center=true&vCenter=true&width=500&lines=04+%2F%2F+GOTITAS+MAGICAS" alt="Gotitas Magicas Title">
 </div>
@@ -234,8 +230,9 @@
       <img width="100%" alt="Gotitas Magicas" src="https://github.com/user-attachments/assets/b885be73-b3ba-4864-a0bf-8a09990b13af" style="border-radius: 10px;" />
     </td>
     <td width="45%" valign="top">
-      <blockquote>Salva a Ajolí el Ajolote y purifica su hábitat acuático.</blockquote>
       <b>🎯 Objetivo:</b> Controlar una canasta para recolectar gotas de agua puras y power-ups, esquivando hábilmente la caída de basura y toxinas.<br><br>
+      <b>📝 Descripción:</b>
+      <blockquote>Salva a Ajolí el Ajolote y purifica su hábitat acuático.</blockquote><br>
       <img src="https://img.shields.io/badge/G%C3%A9nero-Arcade%20%2F%20Educativo-0A0A0F?style=flat-square&labelColor=A855F7">
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
@@ -259,7 +256,6 @@
 
 <br><br>
 
-<!-- ===================== FOOTER ===================== -->
 <div align="center">
   <h3>🚀 Sigamos creando</h3>
   <p><i>Siempre abierta a colaborar en proyectos de desarrollo web y videojuegos.</i></p>
