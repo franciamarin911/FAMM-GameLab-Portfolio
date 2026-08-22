@@ -15,10 +15,10 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/franciamarin911">
+  <a href="https://github.com/franciamarin911" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/GitHub-0A0A0F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub">
   </a>
-  <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/">
+  <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Portafolio-0A0A0F?style=for-the-badge&logo=godotengine&logoColor=A855F7" alt="Portafolio">
   </a>
   <img src="https://img.shields.io/badge/La_Paz,_Bolivia-0A0A0F?style=for-the-badge&logo=googlemaps&logoColor=22D3EE" alt="Ubicación">
@@ -26,10 +26,10 @@
 
 <br><br>
 
-<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px;" cellpadding="25">
+<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px; box-shadow: 0 0 25px rgba(168,85,247,0.35);" cellpadding="25">
   <tr>
     <td width="34%" align="center" valign="middle" style="border-right: 1px solid #2A2A35;">
-      <img src="https://i.imgur.com/Ari1iKp.gif" alt="Insignia Personal" width="190" height="190" style="border: 3px solid #22D3EE; box-shadow: 0 0 20px #A855F7; object-fit: cover;">
+      <img src="https://i.imgur.com/Ari1iKp.gif" alt="Insignia Personal" width="190" height="190" style="border: 3px solid #22D3EE; border-radius: 50%; box-shadow: 0 0 25px #22D3EE, 0 0 45px #A855F7; object-fit: cover;">
       <br><br>
       <img src="https://img.shields.io/badge/BUGSLAYER-A855F7?style=for-the-badge&labelColor=0A0A0F&logoColor=white" alt="Alter Ego"><br><br>
       <sub><i>Avatar</i></sub>
@@ -134,10 +134,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=22D3EE&center=true&vCenter=true&width=500&lines=01+%2F%2F+MATH+CRUSH" alt="Math Crush Title">
 </div>
 <br>
-<table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px;" cellpadding="20">
+<table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px; box-shadow: 0 0 25px rgba(34,211,238,0.35);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <img width="100%" alt="Math Crush" src="https://github.com/user-attachments/assets/2d94bfd4-94e1-4a55-a034-b1ff8de46fe4" style="border-radius: 10px;" />
+      <img width="100%" alt="Math Crush" src="https://github.com/user-attachments/assets/2d94bfd4-94e1-4a55-a034-b1ff8de46fe4" style="border-radius: 10px; box-shadow: 0 0 15px rgba(34,211,238,0.4);" />
     </td>
     <td width="45%" valign="top">
       <b>🎯 Objetivo:</b> Encontrar el número objetivo seleccionando dos números vecinos y la operación matemática correcta (+, −, × o ÷) antes de que acaben los 60 segundos.<br><br>
@@ -147,11 +147,11 @@
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20CSS3%20%2F%20JS-0A0A0F?style=flat-square&labelColor=2A2A35">
       <br><br>
-      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Math_Crush_Game/Math_Crush_V3_RGB_Gamer_4K_fixed.html">
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Math_Crush_Game/Math_Crush_V3_RGB_Gamer_4K_fixed.html" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-A855F7?style=for-the-badge&logoColor=white" alt="Jugar">
       </a>
       <br><br>
-      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game">
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Math_Crush_Game" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código Fuente">
       </a>
     </td>
@@ -164,10 +164,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=A855F7&center=true&vCenter=true&width=500&lines=02+%2F%2F+TRASHKETBALL" alt="Trashketball Title">
 </div>
 <br>
-<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px;" cellpadding="20">
+<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px; box-shadow: 0 0 25px rgba(168,85,247,0.35);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <img width="100%" alt="Trashketball" src="https://github.com/user-attachments/assets/a769d854-f65c-4a32-b153-c41db0fabbc5" style="border-radius: 10px;" />
+      <img width="100%" alt="Trashketball" src="https://github.com/user-attachments/assets/a769d854-f65c-4a32-b153-c41db0fabbc5" style="border-radius: 10px; box-shadow: 0 0 15px rgba(168,85,247,0.4);" />
     </td>
     <td width="45%" valign="top">
       <b>🎯 Objetivo:</b> Encestar residuos en contenedores móviles dominando la física avanzada, el viento dinámico y obstáculos rebotadores para generar combos.<br><br>
@@ -177,11 +177,11 @@
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
       <br><br>
-      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Trashketball/Trashketball%20v3.html">
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Trashketball/Trashketball%20v3.html" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-22D3EE?style=for-the-badge&logoColor=black" alt="Jugar">
       </a>
       <br><br>
-      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Trashketball">
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Trashketball" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=A855F7" alt="Código Fuente">
       </a>
     </td>
@@ -194,10 +194,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=22D3EE&center=true&vCenter=true&width=500&lines=03+%2F%2F+VERDU-CHAN" alt="Verdu-Chan Title">
 </div>
 <br>
-<table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px;" cellpadding="20">
+<table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px; box-shadow: 0 0 25px rgba(34,211,238,0.35);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <img width="100%" alt="Verdu-Chan" src="https://github.com/user-attachments/assets/8506b871-9207-4e5a-9689-5aa35dde4be0" style="border-radius: 10px;" />
+      <img width="100%" alt="Verdu-Chan" src="https://github.com/user-attachments/assets/8506b871-9207-4e5a-9689-5aa35dde4be0" style="border-radius: 10px; box-shadow: 0 0 15px rgba(34,211,238,0.4);" />
     </td>
     <td width="45%" valign="top">
       <b>🎯 Objetivo:</b> Controlar a una zanahoria que ataca automáticamente, recolectando verduras sanas para subir de nivel y obtener mejoras estilo roguelite.<br><br>
@@ -207,11 +207,11 @@
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
       <br><br>
-      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/verdu-chan/verdu-chan%20v3.html">
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/verdu-chan/verdu-chan%20v3.html" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-A855F7?style=for-the-badge&logoColor=white" alt="Jugar">
       </a>
       <br><br>
-      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/verdu-chan">
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/verdu-chan" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código Fuente">
       </a>
     </td>
@@ -224,10 +224,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=24&pause=2000&color=A855F7&center=true&vCenter=true&width=500&lines=04+%2F%2F+GOTITAS+MAGICAS" alt="Gotitas Magicas Title">
 </div>
 <br>
-<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px;" cellpadding="20">
+<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px; box-shadow: 0 0 25px rgba(168,85,247,0.35);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <img width="100%" alt="Gotitas Magicas" src="https://github.com/user-attachments/assets/b885be73-b3ba-4864-a0bf-8a09990b13af" style="border-radius: 10px;" />
+      <img width="100%" alt="Gotitas Magicas" src="https://github.com/user-attachments/assets/b885be73-b3ba-4864-a0bf-8a09990b13af" style="border-radius: 10px; box-shadow: 0 0 15px rgba(168,85,247,0.4);" />
     </td>
     <td width="45%" valign="top">
       <b>🎯 Objetivo:</b> Controlar una canasta para recolectar gotas de agua puras y power-ups, esquivando hábilmente la caída de basura y toxinas.<br><br>
@@ -237,11 +237,11 @@
       <br>
       <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20JS%20Canvas%202D-0A0A0F?style=flat-square&labelColor=2A2A35">
       <br><br>
-      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Gotitas%20M%C3%A1gicas/gotitas-magicas%20v3.html">
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Gotitas%20M%C3%A1gicas/gotitas-magicas%20v3.html" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-22D3EE?style=for-the-badge&logoColor=black" alt="Jugar">
       </a>
       <br><br>
-      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Gotitas%20M%C3%A1gicas">
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Gotitas%20M%C3%A1gicas" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=A855F7" alt="Código Fuente">
       </a>
     </td>
@@ -259,7 +259,7 @@
 <div align="center">
   <h3>🚀 Sigamos creando</h3>
   <p><i>Siempre abierta a colaborar en proyectos de desarrollo web y videojuegos.</i></p>
-  <a href="https://github.com/franciamarin911">
+  <a href="https://github.com/franciamarin911" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Conectemos_en_GitHub-0A0A0F?style=for-the-badge&logo=github&logoColor=22D3EE">
   </a>
 </div>
