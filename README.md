@@ -253,6 +253,70 @@
 <br><br>
 
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&colors=A855F7,7C3AED,22D3EE&height=110&section=header&text=05%20%2F%2F%20LA%20TORMENTA%20DIGITAL&fontSize=28&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Novela%20Visual%20%2F%20Simulaci%C3%B3n&descAlignY=68&descSize=15&descColor=E8E5F5" alt="La Tormenta Digital Title" width="100%">
+</div>
+<br>
+<div align="center" style="background: linear-gradient(160deg, #0d1f24 0%, #0A0A0F 60%); border-radius: 20px; padding: 4px;">
+<table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px; box-shadow: 0 0 28px rgba(34,211,238,0.4);" cellpadding="20">
+  <tr>
+    <td width="55%" align="center" valign="middle">
+      <!-- TODO: reemplaza este comentario por la etiqueta <img> con la captura del juego, siguiendo el mismo formato que los demás (width="100%" y el mismo style de border-radius/box-shadow) -->
+    </td>
+    <td width="45%" valign="top" style="color:#E8E5F5;">
+      <b style="color:#7CE7FF;">🎯 Objetivo:</b> <span style="color:#E8E5F5;">Sobrevivir 5 días de acoso cibernético tomando decisiones inteligentes: bloquea a los haters, guarda evidencia para el colegio y agradece el apoyo real, sin caer en la tentación de responder a las provocaciones.</span><br><br>
+      <b style="color:#7CE7FF;">📝 Descripción:</b>
+      <blockquote style="color:#C9C4E0; border-left: 3px solid #22D3EE; padding-left: 10px;">Una novela visual interactiva donde cada publicación en el feed puede ser una burla, una amenaza, un mensaje de apoyo o un consejo de prevención. Tus decisiones día a día determinan si logras salir fortalecido de la tormenta o si el acoso te derrota.</blockquote><br>
+      <img src="https://img.shields.io/badge/G%C3%A9nero-Novela%20Visual%20%2F%20Simulaci%C3%B3n-0A0A0F?style=flat-square&labelColor=22D3EE">
+      <br>
+      <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20Bootstrap%205%20%2F%20JS-0A0A0F?style=flat-square&labelColor=2A2A35">
+      <br><br>
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/La%20tormenta%20digital/La_Tormenta_Digital_VDefinitiva.html" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-A855F7?style=for-the-badge&logoColor=white" alt="Jugar">
+      </a>
+      <br><br>
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/La%20tormenta%20digital" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código Fuente">
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br><br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&colors=22D3EE,7C3AED,A855F7&height=110&section=header&text=06%20%2F%2F%20SOBREVIVE%20AL%20MES&fontSize=30&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Simulaci%C3%B3n%20%2F%20Finanzas&descAlignY=68&descSize=15&descColor=E8E5F5" alt="Sobrevive al Mes Title" width="100%">
+</div>
+<br>
+<div align="center" style="background: linear-gradient(160deg, #1a0b2e 0%, #0A0A0F 60%); border-radius: 20px; padding: 4px;">
+<table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px; box-shadow: 0 0 28px rgba(168,85,247,0.4);" cellpadding="20">
+  <tr>
+    <td width="55%" align="center" valign="middle">
+      <!-- TODO: reemplaza este comentario por la etiqueta <img> con la captura del juego, siguiendo el mismo formato que los demás (width="100%" y el mismo style de border-radius/box-shadow) -->
+    </td>
+    <td width="45%" valign="top" style="color:#E8E5F5;">
+      <b style="color:#C9A6FF;">🎯 Objetivo:</b> <span style="color:#E8E5F5;">Sobrevivir 30 días administrando $600 iniciales: cubre tus cobros fijos, resuelve imprevistos y llega a $200 ahorrados sin quedarte en cero.</span><br><br>
+      <b style="color:#C9A6FF;">📝 Descripción:</b>
+      <blockquote style="color:#C9C4E0; border-left: 3px solid #A855F7; padding-left: 10px;">Un simulador de finanzas personales con estética neón donde cada día trae un evento distinto: emergencias médicas, tentaciones de gasto, proyectos freelance y crisis familiares. Cada elección impacta tu liquidez, tus ahorros y tu salud global.</blockquote><br>
+      <img src="https://img.shields.io/badge/G%C3%A9nero-Simulaci%C3%B3n%20%2F%20Finanzas-0A0A0F?style=flat-square&labelColor=A855F7">
+      <br>
+      <img src="https://img.shields.io/badge/Tech-HTML5%20%2F%20CSS3%20%2F%20JS-0A0A0F?style=flat-square&labelColor=2A2A35">
+      <br><br>
+      <a href="https://franciamarin911.github.io/FAMM-GameLab-Portfolio/Sobrevive%20al%20mes/Sobrevive_al_mes_v3.html" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/🎮_JUGAR_AHORA-22D3EE?style=for-the-badge&logoColor=black" alt="Jugar">
+      </a>
+      <br><br>
+      <a href="https://github.com/franciamarin911/FAMM-GameLab-Portfolio/tree/main/Sobrevive%20al%20mes" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/📁_CÓDIGO_FUENTE-0A0A0F?style=for-the-badge&logo=github&logoColor=A855F7" alt="Código Fuente">
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br><br>
+
+<div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&colors=6D28D9,7C3AED,8B5CF6,A78BFA,22D3EE&height=4&section=header" width="100%"/>
 </div>
 
