@@ -260,7 +260,7 @@
 <table align="center" width="100%" style="border: 2px solid #22D3EE; border-radius: 16px; box-shadow: 0 0 28px rgba(34,211,238,0.4);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <!-- TODO: reemplaza este comentario por la etiqueta <img> con la captura del juego, siguiendo el mismo formato que los demás (width="100%" y el mismo style de border-radius/box-shadow) -->
+      <img width="732" height="366" alt="TORMENTAAAA" src="https://github.com/user-attachments/assets/3b963ad2-6ee9-4808-b7b0-7427aee8b23c" />
     </td>
     <td width="45%" valign="top" style="color:#E8E5F5;">
       <b style="color:#7CE7FF;">🎯 Objetivo:</b> <span style="color:#E8E5F5;">Sobrevivir 5 días de acoso cibernético tomando decisiones inteligentes: bloquea a los haters, guarda evidencia para el colegio y agradece el apoyo real, sin caer en la tentación de responder a las provocaciones.</span><br><br>
@@ -292,7 +292,7 @@
 <table align="center" width="100%" style="border: 2px solid #A855F7; border-radius: 16px; box-shadow: 0 0 28px rgba(168,85,247,0.4);" cellpadding="20">
   <tr>
     <td width="55%" align="center" valign="middle">
-      <!-- TODO: reemplaza este comentario por la etiqueta <img> con la captura del juego, siguiendo el mismo formato que los demás (width="100%" y el mismo style de border-radius/box-shadow) -->
+      <img width="634" height="424" alt="SOBREVIVE AL MESSSS" src="https://github.com/user-attachments/assets/07ac98ec-9810-48e3-89d4-27d8d18f6ef2" />
     </td>
     <td width="45%" valign="top" style="color:#E8E5F5;">
       <b style="color:#C9A6FF;">🎯 Objetivo:</b> <span style="color:#E8E5F5;">Sobrevivir 30 días administrando $600 iniciales: cubre tus cobros fijos, resuelve imprevistos y llega a $200 ahorrados sin quedarte en cero.</span><br><br>
